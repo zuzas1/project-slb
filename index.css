@@ -1,5 +1,5 @@
 body {
-    margin: 1px;
+    margin: 0;
 }
 header {
     display: flex;
@@ -11,6 +11,7 @@ header {
     border-radius: 6px;
     position: fixed;
     min-width: 100%;
+    max-width: 100vh;
     top: 0;
     z-index: 200;
     box-shadow: inset 1px 1px 20px black;
@@ -26,13 +27,13 @@ main {
     display: grid;
     grid-template-columns: 1fr;
 }
-@media (min-width: 550px) and (max-width: 950px){
+@media (min-width: 900px) and (max-width: 1350px){
     .player-grid {
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (min-width: 951px){
+@media (min-width: 1351px){
     .player-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
