@@ -1,0 +1,38 @@
+body {
+    margin: 1px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    padding: 5px;
+    margin: 0;
+    border-radius: 6px;
+    position: fixed;
+    min-width: 100%;
+    top: 0;
+    z-index: 200;
+    box-shadow: inset 1px 1px 20px black;
+}
+.benficalogo-pic {
+    height: 40px;
+    cursor: pointer;
+}
+main {
+    margin-top: 55px;
+}
+.player-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 550px) and (max-width: 950px){
+    .player-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 951px){
+    .player-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

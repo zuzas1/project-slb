@@ -1,0 +1,29 @@
+.player-main-div {
+    display: flex;
+    flex-direction: column;
+    width: clamp(340px, 100%, 450px);
+    position: relative;
+    font-family: serif;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+}
+.player-pic {
+    padding: 10px;    
+}
+.player-name-div {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+}
+.player-number {
+    color: white;
+    background-color: red;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px black;
+    position: absolute;
+    right: 0;
+    margin: 20px;
+}
