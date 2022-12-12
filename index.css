@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    padding: 5px;
+    margin: 0;
+    border-radius: 6px;
+    position: fixed;
+    min-width: 98%;
+    top: 0;
+    z-index: 200;
+    box-shadow: inset 1px 1px 20px black;
+}
+.benficalogo-div {
+    position: relative;
+}
+.benficalogo-tooltip {
+    pointer-events: none;
+    position: absolute;
+    z-index: 201;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border-radius: 4px;
+    bottom: -22px;
+    left: 9px;
+    opacity: 0;
+}
+.benficalogo-div:hover .benficalogo-tooltip {
+    opacity: 1;
+    transition: 0.3s;
+}
+.benficalogo-pic {
+    height: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.stadium-header-div {
+    position: relative;
+}
+.stadium-header-tooltip {
+    pointer-events: none;
+    position: absolute;
+    z-index: 201;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border-radius: 4px;
+    bottom: -22px;
+    left: 9px;
+    opacity: 0;
+    padding: 1px;
+}
+.stadium-header-div:hover .stadium-header-tooltip {
+    opacity: 1;
+    transition: 0.3s;
+}
+.stadium-header-pic {
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+main {
+    margin-top: 55px;
+}
+.player-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 750px) and (max-width: 1125px){
+    .player-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 1126px) and (max-width: 1500px){
+    .player-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1501px) {
+    .player-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

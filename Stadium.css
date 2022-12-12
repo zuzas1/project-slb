@@ -1,0 +1,7 @@
+.stadium-div {
+    width: clamp(340px, 100%, 1800px);
+    margin-top: 55px;
+}
+.stadium-pic {
+    max-width: 100%;
+}
